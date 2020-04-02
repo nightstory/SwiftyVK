@@ -4,7 +4,7 @@ protocol Authorizator: class {
     func getSavedToken(sessionId: String) -> InvalidatableToken?
     func authorize(sessionId: String, config: SessionConfig, revoke: Bool) throws -> InvalidatableToken
     func authorize(sessionId: String, rawToken: String, expires: TimeInterval) throws -> InvalidatableToken
-    func authorizeCode(sessionId: String, config: SessionConfig, revoke: Bool) throws -> Code
+    func authorizeCode(sessionId: String, config: SessionConfig, revoke: Bool, redirectUri: String) throws -> Code
     func validate(sessionId: String, url: URL) throws -> InvalidatableToken
     func reset(sessionId: String) -> InvalidatableToken?
     func handle(url: URL, app: String?)
@@ -54,7 +54,7 @@ final class AuthorizatorImpl: Authorizator {
         self.codeMaker = codeMaker
     }
     
-    func authorizeCode(sessionId: String, config: SessionConfig, revoke: Bool) throws -> Code {
+    func authorizeCode(sessionId: String, config: SessionConfig, revoke: Bool, redirectUri: String) throws -> Code {
         return try queue.sync {
             guard let scopes = delegate?.vkNeedsScopes(for: sessionId).rawValue else {
                 throw VKError.vkDelegateNotFound
@@ -65,7 +65,8 @@ final class AuthorizatorImpl: Authorizator {
                 config: config,
                 scopes: scopes,
                 revoke: revoke,
-                responseType: "code"
+                responseType: "code",
+                redirectUri: redirectUri
             )
             
             return try getCode(request: webAuthRequest)
@@ -95,7 +96,8 @@ final class AuthorizatorImpl: Authorizator {
                 config: config,
                 scopes: scopes,
                 revoke: revoke,
-                responseType: "token"
+                responseType: "token",
+                redirectUri: webRedirectUrl
             )
             
             try vkAppProxy.send(query: vkAppAuthQuery)
@@ -245,13 +247,14 @@ final class AuthorizatorImpl: Authorizator {
         config: SessionConfig,
         scopes: Int,
         revoke: Bool,
-        responseType: String
+        responseType: String,
+        redirectUri: String
         ) throws -> URLRequest {
         let webQuery = try makeAuthQuery(
             sessionId: sessionId,
             config: config,
             scopes: scopes,
-            redirectUrl: webRedirectUrl,
+            redirectUrl: redirectUri,
             revoke: revoke,
             responseType: responseType
         )

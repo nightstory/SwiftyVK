@@ -42,6 +42,7 @@ final class APIWorker {
     
     class func authorizeCode() {
         VK.sessions.default.logInCode(
+            redirectUri: "https://oauth.vk.com/blank.html",
             onSuccess: { info in
                 print("SwiftyVK: code: success authorize with", info)
             },

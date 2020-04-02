@@ -21,7 +21,7 @@ public protocol Session: class {
     /// Returns only authorization code to be used on your server side.
     /// - parameter onError: clousure which will be executed when logging failed.
     /// Returns cause of failure.
-    func logInCode(onSuccess: @escaping ([String: String]) -> (), onError: @escaping RequestCallbacks.Error)
+    func logInCode(redirectUri: String, onSuccess: @escaping ([String: String]) -> (), onError: @escaping RequestCallbacks.Error)
     /// Log in user with oAuth or VK app
     /// - parameter onSuccess: clousure which will be executed when user sucessfully logged.
     /// Returns info about logged user.
@@ -160,10 +160,10 @@ public final class SessionImpl: Session, TaskSession, DestroyableSession, ApiErr
         }
     }
     
-    public func logInCode(onSuccess: @escaping ([String: String]) -> (), onError: @escaping RequestCallbacks.Error) {
+    public func logInCode(redirectUri: String, onSuccess: @escaping ([String: String]) -> (), onError: @escaping RequestCallbacks.Error) {
         gateQueue.async {
             do {
-                let info = try self.logInCode(revoke: true)
+                let info = try self.logInCode(revoke: true, redirectUri: redirectUri)
                 DispatchQueue.global().async {
                     onSuccess(info)
                 }
@@ -177,14 +177,15 @@ public final class SessionImpl: Session, TaskSession, DestroyableSession, ApiErr
     }
     
     @discardableResult
-    func logInCode(revoke: Bool) throws -> [String: String] {
+    func logInCode(revoke: Bool, redirectUri: String) throws -> [String: String] {
         try throwIfDestroyed()
         try throwIfAuthorized()
         
         let code = try authorizator.authorizeCode(
             sessionId: id,
             config: config,
-            revoke: revoke
+            revoke: revoke,
+            redirectUri: redirectUri
         )
         
         sendCodeReceiveEvent(code: code)
