@@ -24,6 +24,18 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		13DB03722431534400ADC5DD /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB03712431534400ADC5DD /* Code.swift */; };
+		13DB0374243153DD00ADC5DD /* CodeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB0373243153DD00ADC5DD /* CodeParser.swift */; };
+		13DB03752431556A00ADC5DD /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB03712431534400ADC5DD /* Code.swift */; };
+		13DB03762431556C00ADC5DD /* CodeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB0373243153DD00ADC5DD /* CodeParser.swift */; };
+		13DB03792431619F00ADC5DD /* CodeParserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB03772431615000ADC5DD /* CodeParserMock.swift */; };
+		13DB037A2431619F00ADC5DD /* CodeParserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB03772431615000ADC5DD /* CodeParserMock.swift */; };
+		13DB037C2431623500ADC5DD /* CodeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB037B2431623500ADC5DD /* CodeMock.swift */; };
+		13DB037D2431623500ADC5DD /* CodeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB037B2431623500ADC5DD /* CodeMock.swift */; };
+		13DB037F243162FC00ADC5DD /* CodeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB037E243162FC00ADC5DD /* CodeParserTest.swift */; };
+		13DB0380243162FC00ADC5DD /* CodeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB037E243162FC00ADC5DD /* CodeParserTest.swift */; };
+		13DB0383243164E600ADC5DD /* Authorizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE21F9297A9009615E7 /* Authorizator.swift */; };
+		13DB0384243164E700ADC5DD /* Authorizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE21F9297A9009615E7 /* Authorizator.swift */; };
 		A20CDD941EF667B000271276 /* CaptchaPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20CDD931EF667B000271276 /* CaptchaPresenterTests.swift */; };
 		A20CDD961EF66AEC00271276 /* CaptchaControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20CDD951EF66AEC00271276 /* CaptchaControllerMock.swift */; };
 		A22179C81EBA3DBD006B71FD /* AttemptShedulerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22179C71EBA3DBD006B71FD /* AttemptShedulerMock.swift */; };
@@ -374,7 +386,6 @@
 		D4BBFEFF1F929891009615E7 /* SessionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDDF1F9297A9009615E7 /* SessionsStorage.swift */; };
 		D4BBFF001F929891009615E7 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE01F9297A9009615E7 /* Session.swift */; };
 		D4BBFF011F929891009615E7 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE11F9297A9009615E7 /* TokenStorage.swift */; };
-		D4BBFF021F929891009615E7 /* Authorizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE21F9297A9009615E7 /* Authorizator.swift */; };
 		D4BBFF031F929891009615E7 /* SessionsHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE31F9297A9009615E7 /* SessionsHolder.swift */; };
 		D4BBFF041F929891009615E7 /* EncodedSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE41F9297A9009615E7 /* EncodedSession.swift */; };
 		D4BBFF051F929891009615E7 /* ApiErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE51F9297A9009615E7 /* ApiErrorHandler.swift */; };
@@ -476,7 +487,6 @@
 		D4BBFFC71F929893009615E7 /* SessionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDDF1F9297A9009615E7 /* SessionsStorage.swift */; };
 		D4BBFFC81F929893009615E7 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE01F9297A9009615E7 /* Session.swift */; };
 		D4BBFFC91F929893009615E7 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE11F9297A9009615E7 /* TokenStorage.swift */; };
-		D4BBFFCA1F929893009615E7 /* Authorizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE21F9297A9009615E7 /* Authorizator.swift */; };
 		D4BBFFCB1F929893009615E7 /* SessionsHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE31F9297A9009615E7 /* SessionsHolder.swift */; };
 		D4BBFFCC1F929893009615E7 /* EncodedSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE41F9297A9009615E7 /* EncodedSession.swift */; };
 		D4BBFFCD1F929893009615E7 /* ApiErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBFDE51F9297A9009615E7 /* ApiErrorHandler.swift */; };
@@ -589,6 +599,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13DB03712431534400ADC5DD /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
+		13DB0373243153DD00ADC5DD /* CodeParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeParser.swift; sourceTree = "<group>"; };
+		13DB03772431615000ADC5DD /* CodeParserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeParserMock.swift; sourceTree = "<group>"; };
+		13DB037B2431623500ADC5DD /* CodeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeMock.swift; sourceTree = "<group>"; };
+		13DB037E243162FC00ADC5DD /* CodeParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeParserTest.swift; sourceTree = "<group>"; };
 		A20CDD931EF667B000271276 /* CaptchaPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaPresenterTests.swift; sourceTree = "<group>"; };
 		A20CDD951EF66AEC00271276 /* CaptchaControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaControllerMock.swift; sourceTree = "<group>"; };
 		A22179C71EBA3DBD006B71FD /* AttemptShedulerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttemptShedulerMock.swift; sourceTree = "<group>"; };
@@ -899,6 +914,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13DB03702431533A00ADC5DD /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				13DB03712431534400ADC5DD /* Code.swift */,
+				13DB0373243153DD00ADC5DD /* CodeParser.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
 		A23708C51EA52F9C00103212 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -908,6 +932,7 @@
 				A2433A421EA5331A0058BB6D /* Doubles */,
 				A25A19D21EE438FB00CF13AF /* AuthorizatorTests.swift */,
 				A25A19CF1EE4233D00CF13AF /* TokenParserTests.swift */,
+				13DB037E243162FC00ADC5DD /* CodeParserTest.swift */,
 				A23708C61EA5309700103212 /* TaskShedulerTests.swift */,
 				A2433A451EA542100058BB6D /* AttemptShedulerTests.swift */,
 				A2B40DFC1EA693B700106AE3 /* UrlRequestBuilderTests.swift */,
@@ -957,6 +982,8 @@
 			children = (
 				A2433A431EA533500058BB6D /* TaskMock.swift */,
 				A2433A471EA542620058BB6D /* AttemptMock.swift */,
+				13DB03772431615000ADC5DD /* CodeParserMock.swift */,
+				13DB037B2431623500ADC5DD /* CodeMock.swift */,
 				A24DDAEB1EB73C9E002EA273 /* QueryBuilderMock.swift */,
 				A24DDAEF1EB73CB6002EA273 /* BodyBuilderMock.swift */,
 				A22179C71EBA3DBD006B71FD /* AttemptShedulerMock.swift */,
@@ -1291,6 +1318,7 @@
 		D4BBFDDE1F9297A9009615E7 /* Sessions */ = {
 			isa = PBXGroup;
 			children = (
+				13DB03702431533A00ADC5DD /* Code */,
 				D46FB3D81F929AB7000CEAEB /* Token */,
 				D46FB3DB1F929C7A000CEAEB /* Management */,
 				D4BBFDE01F9297A9009615E7 /* Session.swift */,
@@ -1625,32 +1653,34 @@
 					};
 					A23708B91EA52F0D00103212 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 744972ET87;
+						DevelopmentTeam = 82BM93XPF9;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					A2527D4A1BD1130D00F65412 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 82BM93XPF9;
 						LastSwiftMigration = 0900;
 					};
 					A2527D541BD1134500F65412 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 82BM93XPF9;
 						LastSwiftMigration = 0800;
 					};
 					A2EB6E9A1BD180DD008E7D86 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 842SSJ357W;
+						DevelopmentTeam = 82BM93XPF9;
 						LastSwiftMigration = 1000;
 					};
 					A2EB6EA71BD180E9008E7D86 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 842SSJ357W;
+						DevelopmentTeam = 82BM93XPF9;
 						DevelopmentTeamName = "Алексей Кудрявцев (Personal Team)";
 						LastSwiftMigration = 1000;
 					};
 					D46FB3E01F929D7A000CEAEB = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = 744972ET87;
+						DevelopmentTeam = 82BM93XPF9;
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
@@ -1833,6 +1863,7 @@
 				D4321D8F1F5F0B34001AFE9F /* TwoVariationsMethodTests.swift in Sources */,
 				D4FCAE811FE68AC200E7D1E7 /* UploadTests.swift in Sources */,
 				A25A19CB1EE4126E00CF13AF /* DependencyFactoryMock.swift in Sources */,
+				13DB037F243162FC00ADC5DD /* CodeParserTest.swift in Sources */,
 				A2F6F8E51EDDF00400933DBC /* AtomicTests.swift in Sources */,
 				D46263A21F9FAB4100333DC3 /* SharePresenterTests.swift in Sources */,
 				D47601221F2E236E005356E5 /* ResponseTests.swift in Sources */,
@@ -1841,6 +1872,7 @@
 				A23E692C1EDAEC5800AA3B3B /* VKAppProxyTests.swift in Sources */,
 				D484C9411F4B3E8300C9651C /* VKURLSessionTaskMock.swift in Sources */,
 				A2B805581EDDB313004DA7EB /* WebPresenterTests.swift in Sources */,
+				13DB037C2431623500ADC5DD /* CodeMock.swift in Sources */,
 				D4B850381FB0DB8700EF02F0 /* ShareWorkerTests.swift in Sources */,
 				A22179CA1EBA4059006B71FD /* SessionTests.swift in Sources */,
 				A2E5C5D91ECCAD4800652262 /* SessionsHolderMock.swift in Sources */,
@@ -1864,6 +1896,7 @@
 				A25A19D31EE438FB00CF13AF /* AuthorizatorTests.swift in Sources */,
 				D497959F1F4DE40900921A21 /* ApiErrorHandlerTests.swift in Sources */,
 				A22179C81EBA3DBD006B71FD /* AttemptShedulerMock.swift in Sources */,
+				13DB03792431619F00ADC5DD /* CodeParserMock.swift in Sources */,
 				D49795A51F4DF86400921A21 /* CustomMethodTests.swift in Sources */,
 				D49795AB1F4DFC2400921A21 /* RequestType+TestExtensions.swift in Sources */,
 				D4F49D421F2DF5B10037B875 /* JsonReader.swift in Sources */,
@@ -1954,7 +1987,6 @@
 				D4BBFFD41F929893009615E7 /* Lock.swift in Sources */,
 				D4BBFF7E1F929892009615E7 /* Photos.swift in Sources */,
 				D4B122961FAB563300F0BE36 /* SharePreferencesController_iOS.swift in Sources */,
-				D4BBFFCA1F929893009615E7 /* Authorizator.swift in Sources */,
 				D4BBFFD01F929893009615E7 /* SessionState.swift in Sources */,
 				D4BBFFB41F929893009615E7 /* ApiError.swift in Sources */,
 				D4BBFFBB1F929893009615E7 /* RequestCallbacks.swift in Sources */,
@@ -1966,12 +1998,14 @@
 				D4BBFF741F929892009615E7 /* Messages.swift in Sources */,
 				D4BBFFCB1F929893009615E7 /* SessionsHolder.swift in Sources */,
 				D4BBFFA91F929893009615E7 /* CookiesStorage.swift in Sources */,
+				13DB03762431556C00ADC5DD /* CodeParser.swift in Sources */,
 				D4BBFFA31F929893009615E7 /* GCD+Extensions.swift in Sources */,
 				D4BBFFBD1F929893009615E7 /* CookiesHolder.swift in Sources */,
 				D4BBFFD21F929893009615E7 /* KeychainProvider.swift in Sources */,
 				D4BBFF771F929892009615E7 /* VKAPI.swift in Sources */,
 				D4BBFFC71F929893009615E7 /* SessionsStorage.swift in Sources */,
 				D4BBFF871F929892009615E7 /* Newsfeed.swift in Sources */,
+				13DB0383243164E600ADC5DD /* Authorizator.swift in Sources */,
 				D4BBFF941F929893009615E7 /* VKURLSession.swift in Sources */,
 				D4BBFFD11F929893009615E7 /* SwiftyVKDelegate.swift in Sources */,
 				D4BBFFA11F929893009615E7 /* Collections+Extensions.swift in Sources */,
@@ -1988,6 +2022,7 @@
 				D4BBFFB21F929893009615E7 /* BasicMethod.swift in Sources */,
 				D4BBFF811F929892009615E7 /* Groups.swift in Sources */,
 				D4BBFFC51F929893009615E7 /* Task.swift in Sources */,
+				13DB03752431556A00ADC5DD /* Code.swift in Sources */,
 				D4BBFFD61F929893009615E7 /* ConnectionObserver.swift in Sources */,
 				D46FB4221F929E35000CEAEB /* WebViewWrapper_IOS.swift in Sources */,
 				D46FB4321F929E4E000CEAEB /* CaptchaController_iOS.swift in Sources */,
@@ -2094,7 +2129,6 @@
 				D46FB41F1F929E31000CEAEB /* WebPresenter.swift in Sources */,
 				D4BBFF0C1F929891009615E7 /* Lock.swift in Sources */,
 				D4BBFEB61F929891009615E7 /* Photos.swift in Sources */,
-				D4BBFF021F929891009615E7 /* Authorizator.swift in Sources */,
 				D4BBFF081F929891009615E7 /* SessionState.swift in Sources */,
 				D4BBFEEC1F929891009615E7 /* ApiError.swift in Sources */,
 				D4BBFEF31F929891009615E7 /* RequestCallbacks.swift in Sources */,
@@ -2108,6 +2142,7 @@
 				D4BBFEDB1F929891009615E7 /* GCD+Extensions.swift in Sources */,
 				D4BBFEF51F929891009615E7 /* CookiesHolder.swift in Sources */,
 				D4BBFF0A1F929891009615E7 /* KeychainProvider.swift in Sources */,
+				13DB03722431534400ADC5DD /* Code.swift in Sources */,
 				D4BBFEAF1F929891009615E7 /* VKAPI.swift in Sources */,
 				D4BBFEFF1F929891009615E7 /* SessionsStorage.swift in Sources */,
 				D4BBFEBF1F929891009615E7 /* Newsfeed.swift in Sources */,
@@ -2118,6 +2153,7 @@
 				D46C4D7420FBA2BA0091752F /* AppLifecycleProvider.swift in Sources */,
 				D40E04071FC1CF8700DBB35A /* FlippedScrollView.swift in Sources */,
 				D4BBFED11F929891009615E7 /* VKViewController.swift in Sources */,
+				13DB0384243164E700ADC5DD /* Authorizator.swift in Sources */,
 				D4BBFEF41F929891009615E7 /* TokenParser.swift in Sources */,
 				D4BBFEB01F929891009615E7 /* Board.swift in Sources */,
 				D4BBFEF81F929891009615E7 /* TaskSheduler.swift in Sources */,
@@ -2178,6 +2214,7 @@
 				D4BBFECB1F929891009615E7 /* Search.swift in Sources */,
 				D4BBFED81F929891009615E7 /* VKNotificationCenter.swift in Sources */,
 				D4BBFEF61F929891009615E7 /* AttemptApiQueue.swift in Sources */,
+				13DB0374243153DD00ADC5DD /* CodeParser.swift in Sources */,
 				D4BBFED21F929891009615E7 /* VKReachability.swift in Sources */,
 				D423E0461FA63CE40083C8FB /* Error+Extensions.swift in Sources */,
 				D4BBFEE31F929891009615E7 /* Parameters.swift in Sources */,
@@ -2205,6 +2242,7 @@
 				D46FB4021F929DBC000CEAEB /* CustomMethodTests.swift in Sources */,
 				D46FB4501F929EE6000CEAEB /* VKNotificationCenterMock.swift in Sources */,
 				D46FB3EE1F929DBC000CEAEB /* TaskShedulerTests.swift in Sources */,
+				13DB0380243162FC00ADC5DD /* CodeParserTest.swift in Sources */,
 				D46FB43F1F929EE6000CEAEB /* TokenStorageMock.swift in Sources */,
 				D46FB4511F929EE6000CEAEB /* LongPollTaskMock.swift in Sources */,
 				D46FB44D1F929EE6000CEAEB /* URLRequestBuilderMock.swift in Sources */,
@@ -2222,6 +2260,7 @@
 				D46FB4011F929DBC000CEAEB /* ApiMethodTests.swift in Sources */,
 				D46FB3FA1F929DBC000CEAEB /* CaptchaPresenterTests.swift in Sources */,
 				D46FB3F81F929DBC000CEAEB /* WebPresenterTests.swift in Sources */,
+				13DB037D2431623500ADC5DD /* CodeMock.swift in Sources */,
 				D477065D1FE4274800D72930 /* RequestTests.swift in Sources */,
 				D46FB4091F929DBC000CEAEB /* ThreeVariationsMethodTests.swift in Sources */,
 				D46FB4051F929DBC000CEAEB /* TaskTests.swift in Sources */,
@@ -2269,6 +2308,7 @@
 				D48F789B1F9FA51C0092931E /* SharePresenterMock.swift in Sources */,
 				D46FB3FD1F929DBC000CEAEB /* ResponseTests.swift in Sources */,
 				D4B850341FB0A78C00EF02F0 /* SynchronouslyTaskTests.swift in Sources */,
+				13DB037A2431619F00ADC5DD /* CodeParserMock.swift in Sources */,
 				D46FB43B1F929EE6000CEAEB /* SessionMock.swift in Sources */,
 				D46C4D7920FBB3E80091752F /* AppLifecycleProviderTests.swift in Sources */,
 				D46FB4371F929EE6000CEAEB /* QueryBuilderMock.swift in Sources */,
@@ -2399,7 +2439,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 744972ET87;
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2436,7 +2476,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 744972ET87;
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -2550,6 +2590,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2602,6 +2643,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2648,6 +2690,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2701,6 +2744,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2744,11 +2788,13 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2799,11 +2845,13 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2857,6 +2905,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2960,7 +3009,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 744972ET87;
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2999,7 +3048,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 744972ET87;
+				DEVELOPMENT_TEAM = 82BM93XPF9;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
